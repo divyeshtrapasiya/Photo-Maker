@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Setting_Activity.Privacy_Policy_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/ic_back"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/tvPrivacyPolicyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/ivBack"
+                android:layout_toEndOf="@id/ivBack"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:text="@string/privacy_policy_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ivBack"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+
+        </RelativeLayout>
+
+        <!-- Content Title -->
+        <TextView
+            android:id="@+id/tvPrivacyPolicyContentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/privacy_policy_content_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPrivacyPolicyContentTitle"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_peregraph"
+                    android:textIsSelectable="true"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textIsSelectable="true"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_peregraph"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@android:color/black" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textIsSelectable="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/third_peregraph"
+                    android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/tvLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/link_color"
+                        android:text="@string/link_text"
+                        android:autoLink="web"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textIsSelectable="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four_peregraph"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textIsSelectable="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five_peregraph"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@android:color/black" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

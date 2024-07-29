@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Setting_Activity.Feedback_Email_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/ic_back" />
+
+
+        <ImageView
+            android:id="@+id/ivAttachment"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/ivSend"
+            android:background="@drawable/ic_attachment" />
+
+
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/ivMenu"
+            android:background="@drawable/ic_send" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/ic_more" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/relative_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_from_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/from_fd43563_gmail_com"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="To :"
+                android:padding="@dimen/_12sdp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <EditText
+                android:id="@+id/etText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/_12sdp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@android:color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_subject"
+        android:layout_width="match_parent"
+        android:layout_below="@id/linear_from_to"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="@string/an_excellent_photo_editor_for_instagram_recommended_to_you"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_13ssp"
+        tools:ignore="TextFields" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_subject"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:textColorHint="@color/black"
+        android:hint="@string/composs"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:minLines="10"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Template_Activity.Templates_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/ic_back"
+            android:contentDescription="@string/back"
+            android:padding="@dimen/_5sdp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_toEndOf="@id/backButton"
+            android:text="@string/templates"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+<!--        <HorizontalScrollView-->
+<!--            android:id="@+id/template_names"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/titleTextView"-->
+<!--            android:layout_marginTop="@dimen/_10sdp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="@dimen/_5sdp"-->
+<!--                tools:ignore="UselessLeaf">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/allCategory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/all_background"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/allCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="All"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/summerCategory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/summerCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Summer"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/schoolCategory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/schoolCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="School"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/childhoodCategory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/childhoodCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Childhood"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/birthdayCategory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/birthdayCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Birthday"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/lgbtCategory"-->
+<!--                    android:layout_width="@dimen/_70sdp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/lgbtCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="LGBT"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/LoveCategory"-->
+<!--                    android:layout_width="@dimen/_70sdp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/loveCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Love"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/selfieCategory"-->
+<!--                    android:layout_width="@dimen/_70sdp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/selfieCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Selfie"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/IgstoryCategory"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/igstoryCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="IG Story"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/FrameCategory"-->
+<!--                    android:layout_width="@dimen/_70sdp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                    android:background="@drawable/button_background_unselected"-->
+<!--                    android:gravity="center">-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/frameCategoryText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Frame"-->
+<!--                        android:textSize="@dimen/_13ssp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </HorizontalScrollView>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_2sdp"-->
+<!--            android:layout_below="@id/template_names"-->
+<!--            android:layout_marginTop="@dimen/_5sdp"-->
+<!--            android:background="@color/off_white" />-->
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_main"
+        android:layout_margin="@dimen/_5sdp" />
+
+
+</RelativeLayout>

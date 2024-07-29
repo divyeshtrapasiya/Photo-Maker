@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/white"
+    tools:context=".Setting_Activity.Language_Activity">
+
+
+    <TextView
+        android:id="@+id/select_language_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Language"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_below="@id/select_language_text"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radio_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp" />
+
+        <RadioButton
+            android:id="@+id/radio_dansk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/dansk"/>
+
+        <RadioButton
+            android:id="@+id/radio_deutsch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/deutsch"/>
+
+        <RadioButton
+            android:id="@+id/radio_espanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/espa_ol"/>
+
+        <RadioButton
+            android:id="@+id/radio_francais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/fran_ais"/>
+
+        <RadioButton
+            android:id="@+id/radio_hindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/hindi"/>
+
+        <RadioButton
+            android:id="@+id/radio_italiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/italiano"/>
+
+        <RadioButton
+            android:id="@+id/radio_japanese"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_height="wrap_content"
+            android:text="@string/japanese"/>
+
+        <RadioButton
+            android:id="@+id/radio_korean"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_height="wrap_content"
+            android:text="@string/korean"/>
+
+        <RadioButton
+            android:id="@+id/radio_bahasa_melayu"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bahasa_melayu"/>
+    </RadioGroup>
+</RelativeLayout>

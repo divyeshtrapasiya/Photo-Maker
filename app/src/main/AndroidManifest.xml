@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollageMakerMakeAnything"
+        tools:ignore="ExtraText"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Multi_Fit_Activity.Multi_Fit_Edit_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Multi_Fit_Activity.Multifit_Saved_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Template_Activity.Templates_Saved_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Template_Activity.Templates_Stiker_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Template_Activity.Templates_Filter_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Template_Activity.Templates_Text_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Template_Activity.Templates_Frame_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Saved_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Drow_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Stiker_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Background_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Add_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Filter_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Text_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Frame_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Image_Layout_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Edit_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Saved_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Drow_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Stiker_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Image_Background_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Add_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Filter_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Edit_Text_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Frame_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Edit_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Image_Edit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Stiker_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Template_Activity.Templates_Add_Image_Activity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Template_Activity.Templates_Activity"
+            android:exported="false"/>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+
+        <activity
+            android:name=".Edit_Activity.Edit_drow_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_cutout_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Shop_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Text_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting_Activity.Feedback_Email_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting_Activity.Terms_of_Use_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting_Activity.Privacy_Policy_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Freesytle_Activity.Freestyle_Image_Select_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Image_Add_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Saved_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Adjust_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting_Activity.Language_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Enhance_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Remove_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Filter_image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting_Activity.Setting_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting_Activity.Manage_Subscriptions_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Purchase_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Freame_image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Crop_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Activity.Edit_Gallery_image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_Photo_Additing_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Collage_Activity.Collage_image_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Splash_Screen_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
